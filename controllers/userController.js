@@ -44,27 +44,6 @@ export const register = async (req, res) => {
   }
 };
 
-
-// User Login
-// export const login = async (req, res) => {
-//   try {
-//     const { email, password } = req.body;
-//     const user = await User.findOne({ where: { email } });
-//     if (!user) return res.status(404).json({ message: "User not found" });
-
-//     const match = await bcrypt.compare(password, user.password);
-//     if (!match) return res.status(401).json({ message: "Incorrect password" });
-
-//     const token = generateToken(user);
-//     res.json({ message: "Login successful", token });
-//   } catch (err) {
-//     res.status(500).json({ error: err.message });
-//   }
-// };
-
-
-
-///////////////////////////////////
 export const login = async (req, res) => {
   try {
     const { email, password } = req.body;

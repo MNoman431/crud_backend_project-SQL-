@@ -16,15 +16,6 @@ export const createProduct = async (req, res) => {
   }
 };
 
-// Get All Products
-// export const getAllProducts = async (req, res) => {
-//   try {
-//     const products = await Product.findAll();
-//     res.json({ products });
-//   } catch (err) {
-//     res.status(500).json({ error: err.message });
-//   }
-// };
 
 // Get only logged-in user's products
 export const getAllProducts = async (req, res) => {
